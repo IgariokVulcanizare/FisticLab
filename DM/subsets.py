@@ -12,10 +12,6 @@ def generate_power_set(input_set):
 def parse_input(input_str):
     input_str = input_str.strip()
 
-    # Wrap input in square brackets if they are missing
-    if not (input_str.startswith("[") and input_str.endswith("]")):
-        input_str = f"[{input_str}]"
-
     result = []
     stack = []
     current_list = result
